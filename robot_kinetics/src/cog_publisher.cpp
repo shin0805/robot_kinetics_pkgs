@@ -95,7 +95,7 @@ void cog_publisher::publish()
     }
     catch (tf2::TransformException &ex)
     {
-      ROS_WARN("%s",ex.what());
+      ROS_INFO("%s",ex.what());
       return;
     }
   }
